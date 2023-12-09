@@ -29,7 +29,6 @@ if (window.location.pathname == "/test_assignment/Application.html") {
                 'amount': 1,
             })
         localStorage.setItem("carts", JSON.stringify(carts))
-        console.log(carts)
         countOrders.innerText = carts.length
     }
 }
