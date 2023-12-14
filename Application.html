@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Work</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="/home.html" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="/AboutUs.html" class="navbar-link">About Us</a></li>
+            <li class="navbar-item"><a href="/Application.html" class="navbar-link">Shop</a></li>
+            <li class="navbar-item"><a href="/checkOut.html" class="navbar-link">Check Out</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="cart">
+                <img src="assets/products/01.jpg" alt="this is product" class="cart-image">
+                <div class="cart-body">
+                    <div class="title-box">
+                        <h2 class="cart-title">كبل كهرباء</h2>
+                        <span class="cart-price">12000 ل.س</span>
+                    </div>
+                    <hr>
+                    <ul class="cart-list">
+                        <li class="cart-item">لحجم 800 لتر</li>
+                        <li class="cart-item">تكنولوجيا</li>
+                        <li class="cart-item">يدوم طويلا بتوفير في الطاقة يصل إلى 50%</li>
+                        <li class="cart-item">مح ِّول رقمي</li>
+                        <li class="cart-item"> تبريد شامل</li>
+                    </ul>
+                    <button class="cart-btn" onclick="addCart('منتج رقم واحد',12000)">add to cart</button>
+                </div>
+            </div>
+            <div class="cart">
+                <img src="assets/products/02.jpg" alt="this is product" class="cart-image">
+                <div class="cart-body">
+                    <div class="title-box">
+                        <h2 class="cart-title">لمبة موفرة</h2>
+                        <span class="cart-price">5000 ل.س</span>
+                    </div>
+                    <hr>
+                    <ul class="cart-list">
+                        <li class="cart-item">لحجم 800 لتر</li>
+                        <li class="cart-item">تكنولوجيا</li>
+                        <li class="cart-item">يدوم طويلا بتوفير في الطاقة يصل إلى 50%</li>
+                        <li class="cart-item">مح ِّول رقمي</li>
+                        <li class="cart-item"> تبريد شامل</li>
+                    </ul>
+                    <button class="cart-btn" onclick="addCart('منتج رقم اثنين',12000)">add to cart</button>
+                </div>
+            </div>
+            <div class="cart">
+                <img src="assets/products/03.jpg" alt="this is product" class="cart-image">
+                <div class="cart-body">
+                    <div class="title-box">
+                        <h2 class="cart-title">اسلاك حرارية</h2>
+                        <span class="cart-price">2000 ل.س</span>
+                    </div>
+                    <hr>
+                    <ul class="cart-list">
+                        <li class="cart-item">لحجم 800 لتر</li>
+                        <li class="cart-item">تكنولوجيا</li>
+                        <li class="cart-item">يدوم طويلا بتوفير في الطاقة يصل إلى 50%</li>
+                        <li class="cart-item">مح ِّول رقمي</li>
+                        <li class="cart-item"> تبريد شامل</li>
+                    </ul>
+                    <button class="cart-btn" onclick="addCart('منتج رقم ثلاثة',2000)">add to cart</button>
+                </div>
+            </div>
+            <!-- <div class="cart">
+                <img src="assets/products/01.jpg" alt="this is product" class="cart-image">
+                <div class="cart-body">
+                    <div class="title-box">
+                        <h2 class="cart-title">منتج رقم أربعة</h2>
+                        <span class="cart-price">9000 ل.س</span>
+                    </div>
+                    <hr>
+                    <ul class="cart-list">
+                        <li class="cart-item">لحجم 800 لتر</li>
+                        <li class="cart-item">تكنولوجيا</li>
+                        <li class="cart-item">يدوم طويلا بتوفير في الطاقة يصل إلى 50%</li>
+                        <li class="cart-item">مح ِّول رقمي</li>
+                        <li class="cart-item"> تبريد شامل</li>
+                    </ul>
+                    <button class="cart-btn" onclick="addCart('منتج رقم أربعة',9000)">add to cart</button>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    <a class="btn-cart" href="checkOut.html">
+        <img src="assets/cart.png" alt="this is cart" class="img-cart">
+        <span class="count-orders" id="count-orders">0</span>
+    </a>
+    <script src="myFuncitons.js"></script>
+</body>
+
+</html>

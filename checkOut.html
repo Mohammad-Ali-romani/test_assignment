@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Check out</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="/home.html" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="/AboutUs.html" class="navbar-link">About Us</a></li>
+            <li class="navbar-item"><a href="/Application.html" class="navbar-link">Shop</a></li>
+            <li class="navbar-item"><a href="/checkOut.html" class="navbar-link">Check Out</a></li>
+        </ul>
+    </nav>
+    <div class="checkout">
+        <div class="box-checkout">
+            <h1 class="checkout-title">سلة المشتريات</h1>
+            <hr>
+            <div class="checkout-body">
+                <table class="table-checkout">
+                    <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                المادة
+                            </th>
+                            <th>
+                                السعر
+                            </th>
+                            <th>
+                                الكمية
+                            </th>
+                            <th>
+                                السعر الإجمالي
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-checkout">
+
+                    </tbody>
+                </table>
+                <div class="btn-footer">
+                    <button class="btn-primary" onclick="nextOrder()">متابعة</button>
+                    <button class="btn-cancel" onclick="cleanOrders()">إلغاء</button>
+                </div>
+            </div>
+        </div>
+                 
+                  
+        <div class="confirm-buy" style="display: none;">
+            <h1 class="confirm-title">سلة المشتريات</h1>
+            <hr>
+            <div class="errors" style="display: none;">
+                <ul id="error-list">
+                </ul>
+            </div>
+            <form action="/Application.html" onsubmit="submitOrder(event,this)">
+
+                <div class="form-group">
+                    <label for="name">الاسم الكامل</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="IDnumber">الرقم الوطني</label>
+                    <input type="number" id="IDnumber">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="birthDate">تاريخ الولادة</label>
+                    <input type="date" id="birthDAate">
+                </div>
+                <div class="form-group">
+                    <label for="numberPhone">رقم الموبايل</label>
+                    <input type="number" id="numberPhone">
+                   
+                </div>
+
+                <div class="form-group">
+                    <label for="email">الإيميل</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="verificationCode">رمز التحقق</label>
+                    <img src="captcha.jpg" alt="this is code">
+                    <input type="text" id="verificationCode">
+                </div>
+                <button class="btn-primary" >تأكيد</button>
+            </form>
+        </div>
+    </div>
+    <script src="myFuncitons.js"></script>
+</body>
+
+</html>
+  <!-- order -->
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>براد سامسونج بابين</td>
+                        <td>650000</td>
+                        <td>2</td>
+                        <td>1300000</td>
+                    </tr> -->
+                   
+                    <!-- <tr>
+                        <td></td>
+                        <td colspan="3">الضريبة 5%</td>
+                        <td>850000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="3">المجموع النهائي</td>
+                        <td>178500000 ل.س</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="text-align: center;">فقط سبعة عشر مليون وثمانمائة وخمسون ألف ليرة سورية
+                            الغير</td>
+                    </tr> -->
