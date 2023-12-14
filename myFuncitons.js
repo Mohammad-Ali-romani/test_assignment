@@ -9,7 +9,7 @@ if (localStorage.getItem("carts") != null)
 
 
 // page application
-if (window.location.pathname == "/Application.html") {
+if (window.location.pathname == "/test_assignment/Application.html") {
     let countOrders = document.getElementById('count-orders');
     if (countOrders.value != '')
         countOrders.innerText = carts.length
@@ -29,12 +29,11 @@ if (window.location.pathname == "/Application.html") {
                 'amount': 1,
             })
         localStorage.setItem("carts", JSON.stringify(carts))
-        console.log(carts)
         countOrders.innerText = carts.length
     }
 }
 // page checkout
-if (location.pathname == "/checkOut.html") {
+if (location.pathname == "/test_assignment/checkOut.html") {
     const boxCheckout = document.querySelector('.box-checkout');
     const confirmBuy = document.querySelector('.confirm-buy');
     const tableCheckout = document.getElementById('table-checkout');
